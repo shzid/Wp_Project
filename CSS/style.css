@@ -1,0 +1,244 @@
+/* Common CSS Begins */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1080px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcf5eb;
+}
+.db{
+    content: "";
+    color: #1c1e21;
+    background-color: #25d366;
+    padding: 16px 28px;
+    font-size: 16px;
+    border: 1px solid #1c1e21;
+    border-radius: 35px;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+}
+.db::after{
+    content: "";
+    position: absolute;
+    background-color: #1c1e21 !important;
+    height: 70px !important;
+    width: 100% !important;
+    border-radius: 50%;
+    top: 100%;
+    bottom: auto;
+    z-index: -1;
+    transition: 0.8s;
+    left: 0;
+}
+.db:hover{
+    color: #fcf5eb;
+}
+.db:hover::after{
+    top: 0;
+    transform: scale(1.3);
+}
+/* Common CSS Finish */
+/* Nav Bar Begun */
+nav{
+    padding: 30px 50px 50px 50px;
+}
+nav .logo,
+nav .menu,
+nav .downButtonGrp{
+    width: 33.3333%;
+}
+nav .menu ul li,
+nav .downButtonGrp ul li{
+    display: inline-block;
+}
+nav .logo img{
+    width: 120px;
+}
+.container .encrypt ul li a,
+.container .meeting ul li a,
+nav .downButtonGrp ul li a,
+nav .menu ul li a{
+    color: #1c1e21;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 10px;
+    position: relative;
+    display: block;
+}
+.container .encrypt ul li a::after,
+.container .meeting ul li a::after,
+nav .downButtonGrp ul li a::after,
+nav .menu ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #25d366;
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+    transition: 0.8s;
+}
+.container .encrypt ul li:hover a::after,
+.container .meeting ul li:hover a::after,
+nav .downButtonGrp ul li:hover a::after,
+nav .menu ul li:hover a::after{
+    width: 100%;
+}
+nav .downButtonGrp ul li{
+    text-align: right;
+}
+nav .downButtonGrp ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav .menu{
+    padding: 20px;
+}
+/* Nav Bar Finished */
+/* Banner Part Starts */
+#banner{
+    background-image: url(../Imgs/Banner.png);
+    height: 600px;
+    width: 100%;
+    margin: 10px auto 20px auto;
+    border-radius: 30px;
+    background-size: cover;
+    position: relative; 
+}
+#banner .row{
+    align-items: center;
+    height: 600px;
+    padding: 20px;
+}
+.content{
+    width: 30%;
+    color: #ffffff;
+}
+.content h3{
+    font-size: 60px;
+}
+.content p{
+    font-size: 20px;
+    margin: 10px;
+}
+.downButtonGrp .db span ,
+.content .db span{
+    padding: 10px;
+}
+.floating{
+    position: absolute;
+}
+.banwish{
+    top: 150px;
+    right: 300px;
+    /* width: 100px; */
+}
+.banct{
+    top: 200px;
+    right: 400px;
+    width: 250px;
+}
+.banvr{
+    top: 280px;
+    right: 450px;
+    width: 280px;
+}
+.banselfie{
+    top: 330px;
+    right: 480px;
+    width: 250px;
+}
+.bantext{
+    top: 480px;
+    right: 400px;
+    width: 350px;
+}
+/* Banner Part Finished */
+/* Chatting Part Started */
+#chatting{
+    background-color: #fcf5eb;
+    height: auto;
+    padding: 10px;
+}
+.text{
+    padding: 30px;
+}
+.text img{
+    width: 100%;
+}
+.textType{
+    font-size: 50px;
+    text-align:center;
+}    
+/* Chatting Part Finished */
+/* Conference Part Bismillah */
+#conference{
+    margin: 0 60px;
+}
+.meeting{
+    width: 40%;
+    text-align: left;
+    margin: 0 200px 0 0;
+}
+.meeting h2{
+    font-size: 50px;
+    font-weight: lighter;
+    display: block;
+}
+.meeting a{
+    width: 120px;
+}
+.meeting p{
+    font-size: 20px;
+    font-weight: 200;
+}
+/* Conference Part Alhamdulillah */
+/* Text Encryption Part Bismillah */
+#encryption{
+    padding: 100px;
+    background-color: #111b21;
+    width: 100%;
+}
+.encrypt a{
+    width: 120px;
+    color: #25d366 !important;
+}
+.encrypt{
+    width: 40%;
+    margin: 0 0 0 100px;
+}
+.encrypt h1{
+    width: 20%;
+    font-size: 50px;
+    font-weight: lighter;
+    color: #fcf5eb;
+}
+.encrypt h1 span{
+    color: #25d366;
+}
+.encrypt p{
+    font-size: 20px;
+    font-weight: 200;
+    color: #fcf5eb;
+}
+/* Text Encryption Part Alhamdulillah */
